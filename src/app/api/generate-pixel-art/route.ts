@@ -64,7 +64,7 @@ Please create the final DALL·E prompt that reflects both of the above.
     });
 
     // 최종 프롬프트 텍스트 추출
-    const promptText = result.content;
+    const promptText = result.content as string;
 
     // DALL-E API 호출
     const openai = new OpenAI();
@@ -81,12 +81,12 @@ Please create the final DALL·E prompt that reflects both of the above.
       promptText,
       imageUrl,
     });
-  } catch (error: any) {
-    console.error(error);
+  } catch (error: unknown) {
+    // console.error(error);
     return NextResponse.json(
       {
         success: false,
-        error: error.message || "Something went wrong",
+        error: error instanceof Error ? error.message : "Something went wrong",
       },
       { status: 500 },
     );
