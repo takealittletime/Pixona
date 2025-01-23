@@ -1,12 +1,9 @@
-// src/app/replicate/route.ts
 import { NextRequest } from "next/server";
 import Replicate from "replicate";
 
 export async function POST(request: NextRequest) {
   // body에서 imageUrl(혹은 base64 등) 파싱
   const { imageUrl } = await request.json();
-
-  // 실제로는 process.env.REPLICATE_API_TOKEN에 본인의 Replicate 토큰이 있어야 함
   const replicate = new Replicate({
     auth: process.env.REPLICATE_API_TOKEN || "",
   });
