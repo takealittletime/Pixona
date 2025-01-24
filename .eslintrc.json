@@ -39,6 +39,7 @@
     "no-console": "error",
     "tailwindcss/no-custom-classname": "off",
     "@typescript-eslint/no-unused-vars": "off",
+    "@next/next/no-img-element": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "jsx-a11y/no-static-element-interactions": "off",
