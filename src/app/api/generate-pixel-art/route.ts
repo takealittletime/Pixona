@@ -1,5 +1,3 @@
-// langchain, dotenv 등 필요한 라이브러리 임포트
-// (실제로 사용 중인 라이브러리에 맞춰 import 문을 수정하세요)
 import { config } from "dotenv";
 import { NextRequest, NextResponse } from "next/server";
 config();
@@ -31,14 +29,16 @@ Conditions:
 - Only one character should be presented.
 - The character should be facing to the left in a walking pose, with a bit of dynamic movement.
 - The character should be depicted as a full-body figure.
-- Use a pure white background, and do not include any other objects.`);
+- Use a pure white background, and do not include any other objects.
+`);
 
     // human_message prompt
     const humanMessage = HumanMessagePromptTemplate.fromTemplate(`
 Pixel art style description: {pixel_art_style}
 Character description: {person_description}
 
-Please create the final DALL·E prompt that reflects both of the above.`);
+Please create the final DALL·E prompt that reflects both of the above.
+`);
 
     // prompt 템플릿 생성
     const chatPrompt = ChatPromptTemplate.fromMessages([
@@ -48,8 +48,8 @@ Please create the final DALL·E prompt that reflects both of the above.`);
 
     // LLM 인스턴스 생성 (OpenAI API Key 필요)
     const llm = new ChatOpenAI({
-      temperature: 0.2,
-      modelName: "gpt-4-0613",
+      temperature: 0.3,
+      modelName: "gpt-3.5-turbo",
       apiKey: process.env.OPENAI_API_KEY,
     });
 
@@ -62,6 +62,7 @@ Please create the final DALL·E prompt that reflects both of the above.`);
 
     // 최종 프롬프트 텍스트 추출
     const promptText = result.content as string;
+    // console.log(promptText);
 
     // DALL-E API 호출
     const openai = new OpenAI();
