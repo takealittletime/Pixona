@@ -1,6 +1,5 @@
 // src/app/registercharacter/page.tsx
 "use client";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -120,13 +119,8 @@ export default function RegisterCharacter() {
       "
     >
       {/* 로고 */}
-      <div className="fixed top-10">
-        <Image
-          src="/logo/pixona_logo.png"
-          alt="Pixona"
-          width={200}
-          height={200}
-        />
+      <div className="fixed top-10 h-[200h] w-[200px]">
+        <img src="/logo/pixona_logo.png" alt="Pixona" />
       </div>
 
       {/* 업로드 & 버튼 영역 */}
