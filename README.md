@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🧩 Pixona
 
-## Getting Started
+**'픽소나(Pixona)'** 는 사용자가 입력한 **이미지**를 바탕으로, **생성형 AI**를 통해
+**본인만의 ‘픽셀 아트 아바타’를 생성**하는 서비스 입니다.
 
-First, run the development server:
+본인의 셀프 카메라 사진, 전신 사진, 심지어는 본인이 그린 그림까지.
+픽소나(Pixona)는 특정한 사진 유형에 구애 받지 않습니다.
+본인만의 사진 한 장으로, 원하는 특징을 갖춘 아바타를 생성 해 보세요!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![image](https://github.com/user-attachments/assets/e55ad326-4158-4644-9375-39222fd6c55b)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ➡️ System Flow
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![image](https://github.com/user-attachments/assets/52bab0c2-7800-4647-bf98-a52073b56ff5)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 사용자가 이미지를 입력한다.
 
-## Learn More
+2. Replicate에서 제공하는 img2prompt AI 모델을 통해 해당 이미지에서 특징들을 프롬프트로 추출한다.
 
-To learn more about Next.js, take a look at the following resources:
+3.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Trouble Shooting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![image](https://github.com/user-attachments/assets/58e29799-6c01-45b6-b429-b22bf2eacc89)
 
-## Deploy on Vercel
+![image](https://github.com/user-attachments/assets/9a17fc4f-f33a-42c0-a31b-5038112c731d)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![image](https://github.com/user-attachments/assets/f6c82136-0b94-48e9-b444-dcea6a6498c6)
