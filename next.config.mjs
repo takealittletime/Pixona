@@ -3,36 +3,36 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "", // 주소
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "http",
-        hostname: "",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "http",
-        hostname: "",
-        port: "",
-        pathname: "/**",
-      },
+      // {
+      //   protocol: "https",
+      //   hostname: "", // 주소
+      //   port: "",
+      //   pathname: "/**",
+      // },
+      // {
+      //   protocol: "http",
+      //   hostname: "",
+      //   port: "",
+      //   pathname: "/**",
+      // },
+      // {
+      //   protocol: "https",
+      //   hostname: "",
+      //   port: "",
+      //   pathname: "/**",
+      // },
+      // {
+      //   protocol: "https",
+      //   hostname: "",
+      //   port: "",
+      //   pathname: "/**",
+      // },
+      // {
+      //   protocol: "http",
+      //   hostname: "",
+      //   port: "",
+      //   pathname: "/**",
+      // },
     ],
     formats: ["image/avif", "image/webp"],
   },
